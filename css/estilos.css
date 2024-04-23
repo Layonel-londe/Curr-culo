@@ -153,6 +153,7 @@ section.skills {
     display: flex;
     flex-direction: column;
     height: 244px;
+    text-align: center;
 }
 
 .skills__title {
@@ -243,8 +244,12 @@ section.academic{
 /* experiência*/
 
 section.experience{
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: rgb(61, 61, 85);
+    overflow: hidden;
+    border: 2px solid #000;
 
 }
 .experience__section__title {
@@ -255,14 +260,85 @@ section.experience{
     font-weight: 800;
     text-align: center;
 }
+.experiencie__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+
+}
+.experiencie__box1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+
+}
+.experience__description {
+    display: flex;
+    flex-direction: row;
+}
+.experiencie img {   
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    width: 500px;
+    height: 300px;
+    
+}
+.experience :hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding-right: 50px;
+}
+
+.experiencia__botao--repo {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.245);
+    border-radius: 32px;
+    box-shadow: 0 4px 30px rgba(7, 71, 101, 3.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    padding: 8px;
+    cursor: pointer; 
+    margin: 10px;
+   
+}
+.experiencia__botao--demo {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.245);
+    border-radius: 32px;
+    box-shadow: 0 4px 30px rgba(7, 71, 101, 3.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    padding: 8px; 
+    cursor: pointer;
+    margin: 10px;
+}
+
 
 /*Contato*/
 
 section.formcontato{
     display: flex;
+    justify-content: center;
     background-color: aquamarine;
     gap: 15PX;
-    padding: 10PX;
+    padding: 50PX;
     margin: 5PX;
     
 }
@@ -271,6 +347,7 @@ section.formcontato{
 
 section.footer{
    background-color: aqua;
+   padding: 100px;
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
