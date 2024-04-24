@@ -250,7 +250,15 @@ section.experience{
     background-color: rgb(61, 61, 85);
     overflow: hidden;
     border: 2px solid #000;
-
+}
+.experience__title {
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.experience__text {
+    font-size: 23px;
+    font-weight: 400;
 }
 .experience__section__title {
     display: flex;
@@ -279,6 +287,10 @@ section.experience{
 .experience__description {
     display: flex;
     flex-direction: row;
+}
+.experience__img {
+    height: 300px;
+    width: 500px;
 }
 .experiencie img {   
     -webkit-transition: -webkit-transform .5s ease;
