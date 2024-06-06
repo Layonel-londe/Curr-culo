@@ -5,8 +5,10 @@ coloque nas sessões indicadas*/
 :root{
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo:aliceblue;
-   --cor-de-link: #000;
+   --cor-de-fundo:#354E56;
+   --cor-de-link: #1B1B1B;
+   --cor-de-caixa1:#E4E4DE;
+   --cor-de-caixa2:#C4C5BA;
 }
 
 body {
@@ -19,10 +21,11 @@ body {
 }
 ol, ul,li {
     list-style: none;
+    color: var(--cor-de-caixa1);
 }
 a{
     text-decoration: none;
-    color: var(--cor-de-link);
+    color: var(--cor-de-caixa1);
 }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
@@ -41,11 +44,11 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sessão Menu*/
 section.all {
     display: flex;
-    background-color: #fffefe;
+    background-color:var(--cor-de-fundo);
 }
 section.menu{
     display: flex;
-    background-color: aliceblue;
+    background-color: var(--cor-de-fundo);
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -76,8 +79,8 @@ section.menu{
 /*Sessão Title*/
 .title {
     display: flex;
-    background-color: rgb(3, 59, 87);
-   padding-left: 20px;
+    background-color: var(--cor-de-fundo);
+    padding-left: 20px;
     
 }
 .title__div {
@@ -99,7 +102,7 @@ section.menu{
 }
 .title__bio {
     font-size: 26px;
-    color: chocolate;
+    color: var(--cor-de-fundo);
     
 }
 .title__subsection {
@@ -133,7 +136,7 @@ section.menu{
 /*Sessão About*/
 
 section.about{
-    background-color: aliceblue;
+    background-color: var(--cor-de-fundo);
     font-size: 18px;
     font-weight: 400;
     flex-wrap: wrap;
@@ -149,7 +152,7 @@ section.about{
 /* Skills */
 
 section.skills {
-    background-color: aliceblue;
+    background-color: var(--cor-de-fundo);
     display: flex;
     flex-direction: column;
     height: 244px;
@@ -162,6 +165,7 @@ section.skills {
     font-size: 36px;
     font-weight: 800;
     padding: 20px;
+    text-decoration: underline;
 }
 .skills__line {
     display: flex;
@@ -180,7 +184,7 @@ section.skills {
 section.hobbies{
     display: flex;
    flex-direction: column;
-    background-color:aliceblue; 
+    background-color:var(--cor-de-fundo); 
     height: 244px;
 }
 
@@ -190,6 +194,7 @@ section.hobbies{
     font-size: 36px;
     font-weight: 800;
     padding: 20px;
+    text-decoration: underline;
 }
 .hobbies__line {
     display: flex;
@@ -206,10 +211,10 @@ section.hobbies{
 section.academic{
     display: flex;
     flex-direction: column;
-    background-color:rgb(25, 119, 201);
+    background-color:var(--cor-de-fundo);
     height: 244px;
     justify-content: space-around;
-
+    margin-bottom: 30px;
 }
 
 .academic__title {
@@ -217,6 +222,7 @@ section.academic{
     font-size: 36px;
     font-weight: 800;
     justify-content: center;
+    text-decoration: underline;
 }
 .academic__courses__item__title {
     display: flex;
@@ -247,10 +253,15 @@ section.experience{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(61, 61, 85);
+    background-color: var(--cor-de-fundo);
     overflow: hidden;
-    border: 2px solid #000;
+    border: 2px solid var(--cor-de-link);
+    
 }
+.experience__section__title{
+    text-decoration: underline;
+}
+
 .experience__title {
     font-size: 25px;
     font-weight: 500;
@@ -358,8 +369,14 @@ section.formcontato{
 /*footeer*/
 
 section.footer{
-   background-color: aqua;
-   padding: 100px;
+   background-color:var(--cor-de-fundo);
+   padding: 50px;
+}
+.footer__rodape{
+    font-size: 30px;
+    text-align: center;
+    color: var(--cor-de-caixa2);
+
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
